@@ -1,14 +1,11 @@
 require('dotenv').config();
 
 const axios = require('axios')
-
 const { Client } = require("@notionhq/client")
-// Initializing a client
-const notion = new Client({auth: process.env.NOTION_KEY})
-
+const notion = new Client({auth: process.env.NOTION_KEY})// Initializing a client
 const pokeArray = [] 
 
-async function getPokemon(){
+async function getPokemonData(){
     for(let i = 1; i<= 10 ; i++){
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
             .then((poke) => {
@@ -20,9 +17,8 @@ async function getPokemon(){
                     typesArray.push(typeObject)
                 }
                 
-
                 const sprite = (!poke.data.sprites.front_default) ? poke.data.sprites.other['official-artwork'].front_default : poke.data.sprites.front_default;
-                 
+                
                 const pokeData = {
                         "name" : poke.data.name,
                         "id" : poke.data.id,
@@ -43,7 +39,7 @@ async function getPokemon(){
     createNotionPage()
 }
 
-getPokemon() 
+getPokemonData() 
 
 async function createNotionPage(){
     for(let pokemon of pokeArray){
