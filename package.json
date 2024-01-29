@@ -1,0 +1,26 @@
+{
+  "name": "hacktion",
+  "version": "1.0.0",
+  "description": "Proyect demostration Notion's API for Hackaton \"Hacktion\" ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Hacktion "
+  },
+  "keywords": [
+    "Hackaton",
+    "Notion",
+    "API",
+    "Pokemon"
+  ],
+  "author": "xVrzBx",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1"
+  }
+}
