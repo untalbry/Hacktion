@@ -12,10 +12,25 @@ async function getPokemon(){
     for(let i = 1; i<= 10 ; i++){
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
             .then((poke) => {
+                const typesArray = []
+                for(let t of poke.data.types){
+                    const typeObject = {
+                            "name" : t.type.name
+                        }
+                    typesArray.push(typeObject)
+                }
+                
+
+                const sprite = (!poke.data.sprites.front_default) ? poke.data.sprites.other['official-artwork'].front_default : poke.data.sprites.front_default;
+                 
                 const pokeData = {
                         "name" : poke.data.name,
                         "id" : poke.data.id,
-                        "hp" : poke.data.stats[0].base_stat
+                        "hp" : poke.data.stats[0].base_stat,
+                        "types": typesArray,
+                        "sprite": sprite,
+                        "artWork": poke.data.sprites.other['official-artwork'].front_default
+
                 }
                 pokeArray.push(pokeData)
                 console.log(`Fetching ${pokeData.name} from PokeAPI.`)
@@ -38,8 +53,20 @@ async function createNotionPage(){
                 "type": "database_id",
                 "database_id" : process.env.NOTION_DATABASE_ID
             },
+            "cover": {
+                "type": "external",
+                "external":{
+                    "url" : pokemon.artWork
+                }
+            },
+            "icon": {
+                "type": "external",
+                "external":{
+                    "url" : pokemon.sprite
+                }
+            },
             "properties": {
-                "Name":{
+                "NAME":{
                     "title":[
                         {
                             "type": "text",
@@ -48,7 +75,8 @@ async function createNotionPage(){
                     ]
                 },
                 "ID":{ "number": pokemon.id },
-                "HP":{ "number":  pokemon.hp }
+                "HP":{ "number":  pokemon.hp },
+                "TYPES":{"multi_select": pokemon.types},
             }
         })
         console.log(response)
