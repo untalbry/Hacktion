@@ -5,7 +5,6 @@ We required axios and Notion API :
 Using npm: 
 
 ```bash
-
 npm install axios
 ```
 
@@ -45,4 +44,6 @@ NOTION_DATABASE_ID = "YOUR_DATA_BASE_ID_GOES_HERE"
 
 >[!IMPORTANT]
 > Before an integration can interact with your Notion workspace page(s), the page must be manually shared with the integration. To share a page with an integration, visit the page in your Notion workspace, click the ••• menu at the top right of a page, scroll down to Add connections, and use the search bar to find and select the integration from the dropdown list.
+
+
 
