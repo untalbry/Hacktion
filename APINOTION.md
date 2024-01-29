@@ -28,13 +28,13 @@ Select <a href="https://www.notion.so/my-integrations">`Develop or manage integr
 >[!NOTE]
 > You can also visit the <a href="https://developers.notion.com/">official Notion API documentation</a>
 
-You can associate a Notion workspace, add a name and a logo for your integration:  <br>
+You can associate a Notion workspace, add a name and a logo for your integration:  <br><br>
 ![notionIntegration2](https://github.com/xVrzBx/Hacktion/assets/91161604/18cb8f71-8e2c-4025-9cf5-29e1ddac99ca)
-After that it generates a Secret (your token): <br>
+After that it generates a Secret (your token): <br><br>
 ![notionIntegration3](https://github.com/xVrzBx/Hacktion/assets/91161604/db131672-108e-4dc4-94d6-14b71360d2eb)
-You can configurate the API capabilities <br>
+You can configurate the API capabilities <br><br>
 ![notionIntegration4](https://github.com/xVrzBx/Hacktion/assets/91161604/2af702c0-ef94-4848-a7bc-271ac58ccb2e)
-And the distribution: <br>
+And the distribution: <br><br>
 ![notionIntegration5](https://github.com/xVrzBx/Hacktion/assets/91161604/333f7df3-1adc-4024-b669-220ddcb931a2)
 
 After that you have to create an `.env` file for storage the Token and the data base id:
