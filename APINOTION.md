@@ -22,6 +22,8 @@ First in Notion you have to open `settingsAndMembers/myConnection`. In the butto
 
 Select <a href="https://www.notion.so/my-integrations">`Develop or manage integrations` </a> 
 
+![notionIntegrations](https://github.com/xVrzBx/Hacktion/assets/91161604/89cc62f2-e13c-4084-8e18-ae97f936c1dc)
+
 
 >[!NOTE]
-> You can also visin the <a href="https://developers.notion.com/">oficial Notion API documentation</a>
+> You can also visin the <a href="https://developers.notion.com/">official Notion API documentation</a>
