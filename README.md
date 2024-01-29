@@ -1,5 +1,6 @@
 
-![hacktionbannergit](https://github.com/xVrzBx/Hacktion/assets/91161604/84748789-da10-40ca-9887-f9d35bbb5a1c)
+![hacktionbanner](https://github.com/xVrzBx/Hacktion/assets/91161604/c2ed55ff-b1ff-469f-84fa-075068a95d68)
+
 
 # Manual de Hacktion
 
