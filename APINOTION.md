@@ -12,7 +12,7 @@ npm install axios
 ```bash
 npm install @notionhq/client
 ```
-
+And for learning we are going to use the famous <a href="https://pokeapi.co/">POKE API</a>. <br>
 You need to create 2 enviroment variables, one for Notion Token (Internal integration secret) and the other for the data base id that we are going to connect later.
 
 First in Notion you have to open `settingsAndMembers/myConnection`. In the buttom of the page you can see this three options: 
