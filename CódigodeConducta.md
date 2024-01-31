@@ -4,13 +4,13 @@ En Binary Brains, reconocemos la importancia de los proyectos para el desarrollo
 Nos consideramos afortunados de desempeñar un papel en la promoción de la enseñanza de diversas herramientas que permiten una especialización centrada en el desarrollo de software. 
 Esto posibilita la participación de más alumnos en la especialización y colaboración en proyectos con la comunidad estudiantil. Juntos, tenemos la oportunidad de crecer y convertir esta comunidad en un lugar del cual nos enorgullezcamos.
 
-La comunidad de Binary Brains está diseñada para fomentar la colaboración, el apoyo y la lluvia de ideas. Es un espacio civilizado para conectar con otros estudiantes, 
+La comunidad de Notion Campus Leader está diseñada para fomentar la colaboración, el apoyo y la lluvia de ideas. Es un espacio civilizado para conectar con otros estudiantes, 
 aprender nuevas habilidades y compartir ideas, encontrando el respaldo necesario para llevar a cabo proyectos de desarrollo de software.
 
 Con este código de conducta, esperamos ayudarlo a comprender cómo colaborar mejor en esta comunidad, qué puede esperar de los moderadores y qué tipo de acciones o contenidos pueden provocar una suspención temporal o permanente de la partición de la comunidad. Investigaremos todos los informes de abuso y podremos moderar el contenido público en el seno de la comunidad de Binary Brains cuando determinemos que infringe el código de conducta. 
 
 ## Estándares
-Trata a la comunidad de Binary Brains con respeto, reconociendo que somos un recurso compartido. Mantén un ambiente inclusivo y acogedor para todos los miembros,
+Trata a la comunidad de Notion Campus Leader con respeto, reconociendo que somos un recurso compartido. Mantén un ambiente inclusivo y acogedor para todos los miembros,
 independientemente de su nivel de habilidad o experiencia. Se espera que todos los miembros sigan estas prácticas recomendadas para mantener una comunidad fuerte
 
 ###  *Prácticas recomentadas para mantener una comunidad fuerte*
@@ -41,7 +41,7 @@ Al seguir estos estándares, contribuirás a hacer de Binary Brains un lugar don
 >El incumplimiento de estas normas puede resultar en medidas disciplinarias, que van desde advertencias hasta la <strong>expulsión de la comunidad</strong>, con el objetivo de mantener un entorno seguro y propicio para el aprendizaje y desarrollo profesional de todos los alumnos de Binary Brains.
 
 ## Aplicación 
-###  *Acciones que pueden realizar los participantes de la comunidad de Binary Brains*
+###  *Acciones que pueden realizar los participantes de la comunidad de Notion Campus Leader*
 - <strong>Si detecta cualquier problema denúncielo</strong>. Los moderadores gozan de una autoridad especial y son los responsables de esta comunidad.
 Pero tu también. Con tu ayuda los moderadores pueden actuar como coordinadores de la comunidad.  <br> <br> Cuando veas un mal comportamiento, no respondas. Fomenta el mal comportamiento al reconocerlo, consume tu energía y desperdicia el tiempo de todos. Puedes
-denunciar al alumno problemático o contenido disruptivo a la comunidad Binary Brains. 
+denunciar al alumno problemático o contenido disruptivo a la comunidad Notion Campus Leader. 
