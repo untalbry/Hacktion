@@ -1,6 +1,6 @@
 # Código de conducta del Hackaton Hacktion
 ## Descripción general y propósito
-En Binary Brains, reconocemos la importancia de los proyectos para el desarrollo de habilidades de programación en estudiantes de carreras tecnológicas. 
+En este evento, reconocemos la importancia de los proyectos para el desarrollo de habilidades de programación en estudiantes de carreras tecnológicas. 
 Nos consideramos afortunados de desempeñar un papel en la promoción de la enseñanza de diversas herramientas que permiten una especialización centrada en el desarrollo de software. 
 Esto posibilita la participación de más alumnos en la especialización y colaboración en proyectos con la comunidad estudiantil. Juntos, tenemos la oportunidad de crecer y convertir esta comunidad en un lugar del cual nos enorgullezcamos.
 
