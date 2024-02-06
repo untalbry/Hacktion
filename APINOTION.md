@@ -45,6 +45,40 @@ NOTION_DATABASE_ID = "YOUR_DATA_BASE_ID_GOES_HERE"
 >[!IMPORTANT]
 > Before an integration can interact with your Notion workspace page(s), the page must be manually shared with the integration. To share a page with an integration, visit the page in your Notion workspace, click the ••• menu at the top right of a page, scroll down to Add connections, and use the search bar to find and select the integration from the dropdown list.
 
+Now we are going to create our `index.js` file for our proyect. In this file we need to configure `dotenv` to connect our 
+`.env` to our `index` file adding also `axios` and notion client: 
+``` javascript
+require('dotenv').config();
+
+const axios = require('axios')
+const { Client } = require("@notionhq/client")
+const notion = new Client({auth: process.env.NOTION_KEY})// Initializing a client
+
+```
+
+Also we need to create an array for save all the data that we are going to take from de Poke API: 
+
+```javascrit
+  const pokeArray = [] 
+```
+And for get the data we are going to make an `async` function were with `axios` we are going to use the `get` method to get a response from an endpoint and with that data we create an object por save it in the array: 
+```javascript
+  //For take the first pokemon data
+  await axios.get(`https://pokeapi.co/api/v2/pokemon/1`)
+.then(poke) -> {
+  const pokeData = {
+    "name" : poke.data.name,
+    "id" : poke.data.id,
+    "hp" : poke.data.stats[0].base_stat,
+    "types": typesArray,
+    "sprite": sprite,
+    "artWork": poke.data.sprites.other['official-artwork'].front_default
+  }
+  pokeArray.push(pokeData)
+}.catch((error) => {
+  console.log(error)
+})
+```
 
 
 ![pokeapidone](https://github.com/xVrzBx/Hacktion/assets/91161604/c6aa534d-eb93-430e-8e32-e8d63c5a68c6)
