@@ -188,23 +188,26 @@ async function getPokemonData(){
 getPokemonData()
 
 async function createNotionPage(){
-  const response = await notion.pages.create({
-    "parent": {
-      "type": "database_id",
-      "database_id" : process.env.NOTION_DATABASE_ID
-    },
-  "properties": {
-    "NAME":{
-      "title":[
-      {
-        "type": "text",
-        "text":{ "content": pokemon.name }
-      }]
-    },
-    "ID":{ "number": pokemon.id },
-    "HP":{ "number":  pokemon.hp },
-    "TYPES":{"multi_select": pokemon.types},
-    }    
+  for(let pokemon of pokeArray){
+    const response = await notion.pages.create({
+      "parent": {
+        "type": "database_id",
+        "database_id" : process.env.NOTION_DATABASE_ID
+      },
+    "properties": {
+      "NAME":{
+        "title":[
+        {
+          "type": "text",
+          "text":{ "content": pokemon.name }
+        }]
+      },
+      "ID":{ "number": pokemon.id },
+      "HP":{ "number":  pokemon.hp },
+      "TYPES":{"multi_select": pokemon.types},
+      }
+    })
+  }
 }
 
 
