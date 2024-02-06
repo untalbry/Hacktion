@@ -64,7 +64,7 @@ Also we need to create an array for save all the data that we are going to take 
 And for get the data we are going to make an `async` function were with `axios` we are going to use the `get` method to get a response from an endpoint and with that data we create an object por save it in the array: 
 ```javascript
   //For take the first pokemon data
-  await axios.get(`https://pokeapi.co/api/v2/pokemon/1`)
+await axios.get(`https://pokeapi.co/api/v2/pokemon/1`)
 .then(poke) -> {
   const pokeData = {
     "name" : poke.data.name,
@@ -73,12 +73,78 @@ And for get the data we are going to make an `async` function were with `axios` 
     "types": typesArray,
     "sprite": sprite,
     "artWork": poke.data.sprites.other['official-artwork'].front_default
-  }
-  pokeArray.push(pokeData)
-}.catch((error) => {
-  console.log(error)
+    }
+    pokeArray.push(pokeData)
+  }.catch((error) => {
+    console.log(error)
 })
 ```
+I toke the atributes from the oficial <a href="https://pokeapi.co/">Poke API documentation</a> that make the object. 
+<br>
+Now we need to take a look to the Notion API documentation for knowing how to insert data to a data base, because as we saw, Notion has a lot of tipes of atributes (number, multi-select, text, url, etc.), soo we need to see what kind of data are we taking from the poke API and how to insert it into a data base: 
 
+First we need to create a page for our database :
 
+```javascript
+const response = await notion.pages.create({
+  // Here you create a notion page for your database
+  "parent" : {
+    "type": "database_id",
+    "database_id": process.env.NOTION_DATABASE_ID
+  },
+  "properties":{
+    //here you define the values for the data base files 
+  }
+})
+```
+Now i'm going to show you how to insert types of atributes: 
+Number: 
+``` javascript
+"properties":{
+  "NAME OF YOUR COLUMN": {
+    "number" : //a number value goes here
+  }
+}
+```
+Text:
+``` javascript
+"properties":{
+  "NAME OF YOUR COLUMN":{
+    "title":[
+    {
+      "type": "text",
+      "text":{ "content": //A text value goes here }
+    }
+  ]},
+}
+```
+Multi-Select:
+```javascript
+"properties":{
+  "NAME OF YOUR COLUMN": {
+    "multi_select" : //an array goes here
+    }
+}
+```
+After all this info we can build our pokemon page in notion: 
+```javascript
+const response = await notion.pages.create({
+  "parent": {
+    "type": "database_id",
+    "database_id" : process.env.NOTION_DATABASE_ID
+  },
+  "properties": {
+    "NAME":{
+      "title":[
+      {
+        "type": "text",
+        "text":{ "content": pokemon.name }
+      }]
+    },
+    "ID":{ "number": pokemon.id },
+    "HP":{ "number":  pokemon.hp },
+    "TYPES":{"multi_select": pokemon.types},
+    }
+})
+```
 ![pokeapidone](https://github.com/xVrzBx/Hacktion/assets/91161604/c6aa534d-eb93-430e-8e32-e8d63c5a68c6)
