@@ -103,7 +103,7 @@ const response = await notion.pages.create({
   }
 })
 ```
-Now i'm going to show you how to insert types of atributes: 
+Now i'm going to show you how to insert types of atributes: <br>
 Number: 
 ``` javascript
 "properties":{
