@@ -24,6 +24,8 @@
 
 Por favor, asegúrate de registrarte para acceder a todos nuestros recursos exclusivos y mantenernos al tanto de tu participación. ¡No te pierdas nada importante!
 
+[Registro](https://lu.ma/loh1rz15)
+
 ### Dinámicas <a name="dinamicas"></a>
 
 Nuestras dinámicas están diseñadas para fomentar la colaboración, la innovación y el aprendizaje continuo. Prepárate para sumergirte en desafíos estimulantes que pondrán a prueba tus habilidades y te llevarán más allá de tus límites.
